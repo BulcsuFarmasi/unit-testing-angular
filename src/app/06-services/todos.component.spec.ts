@@ -17,6 +17,6 @@ describe('TodosComponent', () => {
 
     component.ngOnInit();
 
-    expect(component.todos.length).toBeGreaterThan(0);
+    expect(component.todos.length).toBe(3);
   });
 });
