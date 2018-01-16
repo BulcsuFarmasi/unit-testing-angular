@@ -13,10 +13,12 @@ describe('TodosComponent', () => {
   });
 
   it('should set todos property with the items returned from the server', () => {
-    spyOn(service, 'getTodos').and.callFake(() => Observable.from([[1, 2, 3]]));
+    let todos = [1, 2, 3];
+
+    spyOn(service, 'getTodos').and.callFake(() => Observable.from([todos]));
 
     component.ngOnInit();
 
-    expect(component.todos.length).toBe(3);
+    expect(component.todos).toBe(todos);
   });
 });
