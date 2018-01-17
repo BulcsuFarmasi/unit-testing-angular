@@ -11,7 +11,7 @@ export class TodosComponent {
     this.service.getTodos().subscribe(t => this.todos = t);
   }
 
-  add() { 
+  add() {
     var newTodo = { title: '... ' };
     this.service.add(newTodo).subscribe(
       t => this.todos.push(t),
