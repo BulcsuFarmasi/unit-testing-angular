@@ -38,6 +38,7 @@ describe('LikeComponent', () => {
 
         it('should decrement totalLikes by -1 after calling it twice',  () => {
             likeComponent.click();
+            likeComponent.click();
 
             expect(likeComponent.totalLikes).toBe(0);
         });
