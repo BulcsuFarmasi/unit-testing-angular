@@ -24,7 +24,7 @@ describe('TodosComponent', () => {
     expect(component.todos).toBe(todos);
   });
 
-    it('should call the server to save the changes when  a new todo item is added',  () => {
+    it('should call the server to save the changes when a new todo item is added',  () => {
         let spy = spyOn(service, 'add').and.callFake(t => {
             return Observable.empty();
         });

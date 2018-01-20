@@ -1,4 +1,4 @@
-import { UsersComponent } from './users.component'; 
+simport { UsersComponent } from './users.component';
 import { UserService } from './user.service'; 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/throw'; 
